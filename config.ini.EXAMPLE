@@ -1,0 +1,18 @@
+[API]
+# Example for OpenAI: https://api.openai.com/v1
+# Example for Local Ollama: http://localhost:11434/v1
+base_url = https://api.openai.com/v1
+api_key = sk-yourkey
+model = gpt-5-mini
+
+[SETTINGS]
+system_prompt = You are Axion, an advanced CLI intelligence. Use Markdown.
+temperature = 0.7
+# Options: native (OpenAI tool calling) or manual (prompt engineering)
+tool_mode = native
+
+[TOOLS]
+# Enable or disable specific tools
+web_search = true
+url_fetch = true
+time_awareness = true
